@@ -39,6 +39,16 @@ with st.sidebar:
         icons=["bar-chart", "image", "info-circle"], menu_icon="menu-up", default_index=0
     )
 
+
+
+models_info = {
+    "Custom CNN": "Custom CNN/custom_cnn_model.keras",
+    "VGG16": "VGG16_final.keras",
+    "ResNet50": "ResNet50_final.keras",
+    "MobileNet": "MobileNet_final.keras",
+    "InceptionV3": "InceptionV3_final.keras",
+    "EfficientNetV2B0": "EfficientNetV2B0_final.keras"
+}
 # Model performance data 
 model_data = {
     'Model': ['VGG16', 'ResNet50', 'MobileNet', 'InceptionV3', 'EfficientNetB0', 'CNN_Scratch'],
@@ -466,3 +476,4 @@ elif selected == "About":
                 <p style="color: #87ceeb; font-size: 0.9rem; line-height: 1.4;">{desc}</p>
             </div>
             """, unsafe_allow_html=True)
+
